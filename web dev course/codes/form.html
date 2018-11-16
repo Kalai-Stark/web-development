@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fourth page</title>
+</head>
+<body>
+<h1>Register</h1>
+<form>
+	<!-- first name -->
+	<label>First Name:<input type="text" name="firstname" placeholder="John" required></label>
+	<!-- last name -->
+	<label>Last Name:<input type="text" name="lastname" placeholder="Smith" required></label>
+	<br>
+	<!-- gender -->
+	<label>Male<input type="radio" name="gender" value="MALE"></label>
+	<label>Female<input type="radio" name="gender" value="FEMALE"></label>
+	<label>Other<input type="radio" name="gender" value="OTHER"></label>
+	<br>
+	<!-- email and password -->
+	<label>Email:<input type="email" name="email" required placeholder="email"></label>
+	<label>Password:<input type="password" name="password" required pattern=".{8,10}" required title="8 to 10 charachters" placeholder="password"></label>
+	<br>
+	<!-- birthday -->
+	<label>Birthday:</label>
+	<select name="Month">
+		<option>Month</option>
+		<option>Jan-April</option>
+		<option>May-Aug</option>
+		<option>Sep-Dec</option>
+	</select>
+	<select name="Day">
+		<option>Day</option>
+		<option>1-10</option>
+		<option>11-20</option>
+		<option>21-31</option>
+	</select>
+	<select name="Year">
+		<option>Year</option>
+		<option>80's</option>
+		<option>90's</option>
+		<option>20's</option>
+	</select>
+	<br>
+<!-- terms and conditions -->
+	<label>I agree to the terms and conditions</label>
+	<input type="checkbox">
+	<br>
+	<!-- submit -->
+	<input type="submit">
+</form>
+</body>
+</html>
